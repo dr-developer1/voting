@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Election</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <br>
+        <h1>Create your New Election</h1>
+        <br>
+    <form id="myForm">
+        <div class="form-row" style="margin-bottom: 20px;">
+            <label for="inputTitle">Title</label>
+            <input type="text" class="form-control" id="inputTitle" placeholder="Insert Your Title, For example: Quue faut il concevoir en premier dans unne page web ?">
+        </div>
+        <label>Suggestion</label>
+        <div class="form-row" style="display:flex;" id="newsuggrow">
+          <div class="form-group col-md-4">
+            <input type="text" class="form-control" name="suggestion[]">
+            <a href="javascript:void(0);" class="link delete suggestion-delete-row" onclick="$(this).closest('.form-group').remove();">Remove</a>
+          </div>
+          <div class="form-group col-md-4">
+            <input type="text" class="form-control" name="suggestion[]">
+            <a href="javascript:void(0);" class="link delete suggestion-delete-row" onclick="$(this).closest('.form-group').remove();">Remove</a>
+          </div>
+        </div>
+        <div class="form-row" style="margin-bottom: 20px;">
+          <a id="add-suggestion-row" href="javascript:void(0);" onclick="App.AddSugg()">+ Add Suggestion</a>
+        </div>
+        <div class="form-row">
+            <button class="btn btn-primary" onclick="App.FormSubmit()">Submit</button>
+        </div>
+      </form>
+      </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/newElection.js"></script>
+</body>
+</html>
