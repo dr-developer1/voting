@@ -12,8 +12,9 @@ npm install
 truffle migrate
 ```
 > Running app
-#### import an account from ganache to metamask and connect it
-after this inn the terminal 
+#### 
+Import an account from ganache to metamask and connect it.
+After this in the terminal :
 ```
 npm run dev
 ```
