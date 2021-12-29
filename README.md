@@ -1,5 +1,5 @@
 # voting
-simple dapp for voting with many features using solidity, html and javascript for education purpose
+A simple blockchain DAPP used for voting including many other features using Solidity, HTML and JavaScript. For education purposes.
 
 ## Pre requirements
 >Install Ganache and Metamask extention
